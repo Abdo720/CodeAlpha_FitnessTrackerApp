@@ -5,6 +5,7 @@ class AppStyles {
   static TextStyle appBarText = TextStyle(
     fontSize: 28,
     fontWeight: FontWeight.bold,
+    color: AppColors.myWhite,
   );
 
   static TextStyle chipLabelTextUnSelected = TextStyle(
@@ -41,5 +42,11 @@ class AppStyles {
     color: AppColors.myGray1,
     fontSize: 16,
     fontWeight: FontWeight.bold,
+  );
+
+  static TextStyle bottomText = TextStyle(
+    fontSize: 32,
+    fontWeight: FontWeight.bold,
+    color: AppColors.myWhite,
   );
 }

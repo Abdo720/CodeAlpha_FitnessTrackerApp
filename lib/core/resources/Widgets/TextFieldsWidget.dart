@@ -5,11 +5,11 @@ import 'package:flutter/material.dart';
 class TextFieldsWidget extends StatelessWidget {
   String hint;
   Widget suffixIcon;
-  TextEditingController controller;
+  TextEditingController? controller;
   TextFieldsWidget({
     super.key,
     required this.hint,
-    required this.controller,
+    this.controller,
     required this.suffixIcon,
   });
 

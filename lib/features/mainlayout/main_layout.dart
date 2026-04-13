@@ -1,6 +1,8 @@
+import 'package:fitness/core/resources/Acces/AllCanAcces.dart';
 import 'package:fitness/core/resources/AppColors/AppColors.dart';
 import 'package:fitness/core/resources/AppStyles/AppStyles.dart';
-import 'package:fitness/features/mainlayout/AddTab/screen/Ui/AddTab.dart';
+import 'package:fitness/features/AddTab/screen/Ui/AddTab.dart';
+import 'package:fitness/features/mainlayout/Progress/progress.dart';
 import 'package:fitness/features/mainlayout/ShowDoneTab/ShowDoneTab.dart';
 import 'package:fitness/features/mainlayout/ShowTab/ShowTab.dart';
 import 'package:flutter/material.dart';
@@ -13,13 +15,13 @@ class MainLayout extends StatefulWidget {
 }
 
 class _MainLayoutState extends State<MainLayout> {
-  final List<Widget> pages = [ShowTab(), ShowDoneTab(), AddTab()];
+  final List<Widget> pages = [ShowTab(), ShowDoneTab(), Progress()];
   int index = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.myGray2,
+      backgroundColor: AppColors.myWhite,
       appBar: AppBar(
         backgroundColor: AppColors.myBlue,
         foregroundColor: AppColors.myWhite,
@@ -52,7 +54,7 @@ class _MainLayoutState extends State<MainLayout> {
               label: "",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.add_circle_outline_sharp),
+              icon: Icon(Icons.bar_chart_sharp),
               label: "",
             ),
           ],
